@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Randomized Boxes</title>
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #eea;
+    }
+
+    .box {
+      width: calc(25% - 40px);
+      height: 100px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    div.static {
+      position: static;
+      border: 3px solid #73AD21;
+    }
+
+    div.relative {
+      position: relative;
+      left: 30px;
+      border: 3px solid #73AD21;
+    }
+
+    div.relative {
+      position: relative;
+      left: 30px;
+      border: 3px solid #73AD21;
+    }
+
+    div.relative {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      border: 3px solid #73AD21;
+    }
+
+    div.absolute {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 200px;
+      height: 100px;
+      border: 3px solid #73AD21;
+    }
+
+    div.sticky {
+      position: -webkit-sticky;
+      /* Safari */
+      position: sticky;
+      top: 0;
+      background-color: green;
+      border: 2px solid #4CAF50;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="static">Static Position</div>
+  <div class="relative">Relative Position</div>
+  <div class="absolute">Absolute Position</div>
+  <div class="sticky">Sticky Position</div>
+
+  <!-- Randomized Boxes -->
+  <div class="box" style="width: 150px; height: 75px; background-color: #f0f;"></div>
+  <div class="box" style="width: 200px; height: 100px; background-color: #00f;"></div>
+  <div class="box" style="width: 120px; height: 60px; background-color: #0f0;"></div>
+  <div class="box" style="width: 180px; height: 90px; background-color: #ff0;"></div>
+  <!-- Continue adding more boxes with randomized sizes and colors -->
+
+</body>
+
+</html>
