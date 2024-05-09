@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="images.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="boxes.html">
+<link rel="preconnect" href="position.html">
+  <meta charset="UTF-8">
+  <title>My Index Page</title>
+  <style>
+      .container {  display: grid;
+  grid-template-columns: 384px 1.8fr 1fr;
+  grid-template-rows: 488.1px 0.8fr 300px;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header Header Header"
+    "left main right"
+    "Footer Footer Footer";
+    text-align: center;
+    text-decoration: dotted 30px;
+        ;
+}
+
+.left { grid-area: left; 
+  background-color: yellow;
+border: 40px solid firebrick;
+}
+
+.main 
+{ grid-area: main;
+  background-color: orange;
+  border: 70px solid salmon;
+ 
+ }
+
+.right { 
+  grid-area: right; 
+background-color: pink;
+border: 15px solid rebeccapurple;
+}
+
+header {
+      background-image: url('https://source.unsplash.com/random/1600x900');
+      background-size: cover;
+      color: #fa;
+      grid-column: 1 / -1;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      padding: 20px;
+    }
+
+
+
+Footer { 
+  grid-area: Footer;
+  background-color: red;
+  border-radius: 20px;
+  border: 20px solid aqua;
+ }
+
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box left">
+      <h2>Dingus</h2>
+      <p>This box is on the left side.</p>
+    </div>
+    <div class="box main">
+      <h2>Bingus</h2>
+      <p>This box is in the middle, representing the main content.</p>
+    </div>
+    <div class="box right">
+      <h2>Pingus</h2>
+      <p>This box is on the right side.</p>
+    </div>
+<header><h1>ingus family</h1></header>
+<footer><h1>chingus</h1></footer>
+  </div>
+  </div>
+</body>
+
+</html>
