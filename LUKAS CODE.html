@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Seahorse Serenity</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
       background: #eea;
@@ -16,7 +17,6 @@
     }
 
     header {
-      background-image: url('https://source.unsplash.com/random/1600x900');
       background-size: cover;
       color: #fff;
       text-align: center;
@@ -89,7 +89,7 @@
   </style>
 </head>
 <body>
-  <header>
+  <header id="header">
     <h1>Header Info Here</h1>
     <img src="#" alt="Seahorses are fun">
   </header>
@@ -157,5 +157,15 @@
     </ul>
     <p>&copy; Seahorse Serenity 2024</p>
   </footer>
+
+  <script>
+    // Fetch a random seahorse image from Unsplash API
+    fetch('https://source.unsplash.com/1600x900/?seahorse')
+      .then(response => {
+        // Set the background image of the header
+        document.getElementById('header').style.backgroundImage = `url('${response.url}')`;
+      })
+      .catch(error => console.error('Error fetching random seahorse image:', error));
+  </script>
 </body>
 </html>
