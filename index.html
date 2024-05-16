@@ -2,86 +2,71 @@
 <html lang="en">
 
 <head>
-  <link rel="preconnect" href="images.html">
-  <link rel="preconnect" href="LUKAS CODE.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="boxes.html">
-<link rel="preconnect" href="position.html">
-<link rel="preconnect" href="grid.html">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <meta charset="UTF-8">
   <title>My Index Page</title>
   <style>
     body {
-      background: #eea;
-      color: #e40000;
-      font-family: Impact, sans-serif;
-      font-style: unset;
-      font-stretch: expanded;
-      word-spacing: 19;
+      background-image: url("images/beanos.jpg");
+      color: rgb(0, 200, 255);
+      font-family: cursive;
+      font-style: calc(40px);
+      font-size: 35px;
+      text-align: center;
+      background-size: cover;
+      background-attachment: fixed;
+  
     }
 
-    a {
-      color: powderblue;
-      text-decoration: underline;
-      transition: color 01s;
-      text-decoration: none;
-      margin-bottom: 40px;
-      display: block;
-      font-size: x-large;
-      transition: .6s border-radius, 1s color,  3s;
+    .beanos {
+      width: 150px;
+      height: 75px;
+      margin: auto;
+      margin-bottom: 112px;
+      transition: transform 0.5s, background-color 0.5s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
     }
 
-    a:hover {
-      color: rgb(223, 1, 201);
-      font-size: 69px;
-      transition: .6s border-radius, 3s color,  .6s;
-      background: rgb(170, 225, 238);
-      border-radius: 20px;
-      margin: 25px;
-    box-shadow: #f0f 0 0 0 transparent;
-    border: 3px solid ;
+    .beanos:hover {
+      transform: scale(1.1);
+      color: rgb(130, 255, 253);
+      font-size: 100px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
     }
 
-    ul {
-      padding: 0;
-      margin:0;
-      list-style-type: none;
-      border-radius: 20px;
+    .beanos p {
+      text-align: center;
+      transition: font-size 0.5s;
     }
 
-    div {
-
-      width: 400px;
-      height: 200px;
-   
-      margin: 20px;
-      padding: 20px;
-
-      border-radius: 90px;
-      transition: background-color 0.5s;
-    }
-
-    .peanut {
-
-      transition: background-color 0.5s;
-    }
 
     .box {
       width: 150px;
       height: 75px;
-      margin: 20px;
-      border: 10px solid orange;
-
+      margin: auto;
+      margin-bottom: 20px;
+      border: 10px solid rgb(0, 200, 255);
       box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.5s, background-color 0.5s;
+      display: flex;
       align-items: center;
-      transition: background-color 0.5s, transform 0.5s;
+      justify-content: center;
     }
 
     .box:hover {
       transform: scale(1.1);
+      color: rgb(223, 1, 201);
+      font-size: 69px;
     }
 
     .box p {
@@ -89,38 +74,29 @@
       text-align: center;
       transition: font-size 0.5s;
     }
-
-    .box:hover p {
-      font-size: 20px;
-    }
-
-    
   </style>
 </head>
 
 <body>
-  <img src="images/april-9th-thingCODING.png" alt="drdr">
-  <p>Hello world.</p>
-  <ul>
-    <li><a href="text.html">Dingus</a></li> Dingus Below
-    <li><a href="text.html">Dingus</a></li>Dingus Below
-    <li><a href="text.html">Dingus</a></li>Dingus Below
-    <li><a href="text.html">Dingus</a></li> 
-  </ul>
 
-  <div class="peanut"></div>
-  <div class="box" style="background-color: #f0f;">
-    <p>Box 1</p>
-  </div>
-  <div class="box" style="background-color: #00f;">
-    <p>Box 2</p>
-  </div>
-  <div class="box" style="background-color: #0f0;">
-    <p>Box 3</p>  
-  </div>
-  <div class="box" style="background-color: #ff0;">
-    <p>Box 4</p>
-  </div>
+  <h1>Lukas Christopher Whites blam slam whammin index page</h1>
+  <a href="LUKAS CODE.html" class="beanos">
+    <p>LUKAS CODE</p>
+    <a href="boxes.html" class="box" style="background-color: #f0f;">
+      <p>Boxes</p>
+    </a>
+    <a href="position.html" class="box" style="background-color: #00f;">
+      <p>Position</p>
+    </a>
+    <a href="grid.html" class="box" style="background-color: #0f0;">
+      <p>Grid</p>
+    </a>
+    <a href="images.html" class="box" style="background-color: rgb(255, 0, 55);">
+      <p>Images</p>
+      <a href="text.html" class="box" style="background-color: rgb(86, 13, 52);">
+        <p>Text</p>
+      </a>
+    </a>
 </body>
 
 </html>
